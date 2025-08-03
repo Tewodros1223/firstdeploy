@@ -1,0 +1,97 @@
+svg{
+    background-color: black;
+    width: 600px;
+}
+
+body{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(235, 240, 238);
+}
+.outer-section{
+    width: 600px;
+    height: 400px;
+    background-color: gray;
+    flood-opacity: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.first-section{
+    width: 100%;
+    height: 50%;
+    background-color: antiquewhite;
+
+}
+.first-section img{
+    width: 100%;
+    height: 100%;
+}
+.second-section{
+    width: 100%;
+    height: 50%;
+    display: inline-flex;
+   background-color: rgb(145, 221, 196);
+}
+.sub1-second-section{
+    width: 50%;
+    height: 100%;
+    background-color: cadetblue;
+}
+.sub1-second-section img{
+    width: 100%;
+    height: 100%;
+}
+.sub2-second-section{
+    width: 50%;
+    height: 100%;    
+}
+.sub2-second-section img{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 618px){
+    body{
+        padding-right: 100px;
+        margin-left: 10px;
+        background-color: silver;
+    }
+    .outer-section{
+        height: 600px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        /*overflow: scroll;*/
+    }
+    .first-section{
+        width: 100%;
+        height: 200px;
+    }
+    .second-section{
+        display: inline-flex;
+        width: 100%;
+        height: 400px;
+        flex-direction: column;
+    }
+    .sub1-second-section {
+        width: 100%;
+        height: 200px;
+        display: flex;
+    }
+    .sub1-second-section img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .sub2-second-section{
+        width: 100%;
+        height: 200px;
+        flex-grow: 1;
+        display: flex;
+    }
+    .sub2-second-section img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+  
+}
